@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Category;
 
-class CategoryController extends Controller
+class ContactController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +13,7 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        $list= Category::all();
-        return view('category.list',['categories'=>$list]);
+        return view('contact');
     }
 
     /**

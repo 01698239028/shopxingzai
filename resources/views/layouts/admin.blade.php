@@ -38,12 +38,7 @@
     @include('patials.sidebar')
 
     <div class="main-panel">
-
-
         @yield('content')
-
-
-
         <footer class="footer">
             <div class="container-fluid">
                 <nav class="pull-left">

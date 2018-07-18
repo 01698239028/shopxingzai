@@ -20,6 +20,13 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/homes','HomeshopController@index');
+Route::get('/category/{id}','ProductsController@category');
+Route::get('/product/{id}','ProductsController@show');
+Route::get('search','ProductsController@index');
+Route::get('log-in','LoginController@index');
+/*Route::get('create-account','RegisterController');*/
+Route::get('contact','ContactController@index');
 
 Route::group(['middleware'=>['auth']],function (){
 

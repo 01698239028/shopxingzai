@@ -28,10 +28,9 @@ class UserController extends Controller
     {
         if($request->has('keyword')){
             $keyword=$request->get('keyword');
-            $users= User::where('user_name','like','%'.$keyword.'%')->get();
-
+            $users= User::where('user_name','like','%'.$keyword.'%')->paginate(10);
         }else{
-            $users= User::all();
+            $users= User::paginate(10);
         }
         return view('admin.user.show',['users'=>$users]);
     }

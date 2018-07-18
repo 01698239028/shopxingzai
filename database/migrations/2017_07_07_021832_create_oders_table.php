@@ -19,12 +19,12 @@ class CreateOdersTable extends Migration
             $table->string('receiver_phone_number',13);
             $table->string('receiver_email',150);
             $table->string('receiver_address',255);
-            $table->integer('user_id')->unsigned();
+            $table->integer('user_id');
             $table->float('amount');
             $table->string('service_name',50);
-            $table->string('payment',255)->nullable();
-            $table->text('payment_info')->nullable();
-            $table->string('security',255)->nullable();
+            $table->string('payment',255);
+            $table->text('payment_info');
+            $table->string('security',255);
             $table->dateTime('receiver_date');
             $table->timestamps();
         });

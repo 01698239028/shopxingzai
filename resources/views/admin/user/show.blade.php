@@ -131,7 +131,6 @@
                                             <td>{{$item->phone_number}}</td>
                                             <td>{{$item->group->title}}</td>
                                             <td>
-
                                                 {!! Form::open(['method'=>'DELETE','url'=>'admin/user/'.$item->id]) !!}
                                                 <a href="{{url('admin/user/'.$item->id.'/edit')}}">Edit</a>
                                                 <button type="submit" class=""
@@ -144,7 +143,7 @@
                                 @endif
                                 </tbody>
                             </table>
-
+                            <div class="page">{{$users->links()}}</div>
                         </div>
                     </div>
                 </div>

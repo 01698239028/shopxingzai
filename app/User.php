@@ -27,7 +27,7 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    public function comment(){
+/*    public function comment(){
         return $this->hasMany('App\Comment','user_id','id');
     }
 
@@ -37,5 +37,5 @@ class User extends Authenticatable
 
     public function oder(){
         return $this->hasMany('App\Oder','user_id','id');
-    }
+    }*/
 }

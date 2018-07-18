@@ -9,7 +9,7 @@ class Image extends Model
     //
     protected $table= 'images';
 
-    public function product(){
+    /*public function product(){
         return $this->belongsTo('App\Product','product_id','id');
-    }
+    }*/
 }

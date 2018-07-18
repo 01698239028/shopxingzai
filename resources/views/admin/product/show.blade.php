@@ -144,6 +144,7 @@
                                 @endif
                                 </tbody>
                             </table>
+                            <div class="page">{{$product->links()}}</div>
                         </div>
 
                     </div>

@@ -27,10 +27,11 @@ class ProductController extends Controller
     public function index(Request $request)
     {
         if($request->has('keyword')){
+
             $keyword= $request->get('keyword');
-            $product= Product::where('name','like','%'.$keyword.'%')->get();
+            $product= Product::where('name','like','%'.$keyword.'%')->paginate(10);
         }else{
-            $product= Product::all();
+            $product= Product::paginate(10);
         }
         return view('admin.product.show',['product'=>$product]);
     }
