@@ -8,7 +8,7 @@ class Product extends Model
 {
     //
     protected $table= 'products';
-/*
+
     public function category(){
         return $this->belongsTo('App\Category');
     }
@@ -27,5 +27,5 @@ class Product extends Model
 
     public function oder_detail(){
         return $this->belongsToMany('App\Oder_detail','product_id','id');
-    }*/
+    }
 }

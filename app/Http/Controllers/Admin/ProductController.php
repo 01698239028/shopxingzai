@@ -15,7 +15,7 @@ class ProductController extends Controller
     {
         $categories= Category::all();
         foreach ($categories as $category){
-            $this->_cate[$category->id]=$category->title;
+            $this->_cate[$category->id] = $category->title;
         }
     }
 
@@ -121,7 +121,7 @@ class ProductController extends Controller
     public function update(Request $request, $id)
     {
         $product= Product::FindOrFail($id);
-        $image=$product->image;
+        $image =$product->image;
 
         if($request->hasFile('image')){
             $file= $request->file('image');

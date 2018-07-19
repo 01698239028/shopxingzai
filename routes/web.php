@@ -27,9 +27,9 @@ Route::get('search','ProductsController@index');
 Route::get('log-in','LoginController@index');
 /*Route::get('create-account','RegisterController');*/
 Route::get('contact','ContactController@index');
-Route::get('trangchu',function (){
+/*Route::get('trangchu',function (){
     return 'hello';
-});
+});*/
 
 Route::group(['middleware'=>['auth']],function (){
 

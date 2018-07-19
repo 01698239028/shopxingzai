@@ -48,11 +48,11 @@ class CreateaccountController extends Controller
         $u->user_name= $request->user_name;
         $u->email= $request->email;
         $u->password=Hash::make($request->password);
-        $u->first_name= $request->first_name;
+       /* $u->first_name= $request->first_name;
         $u->last_name= $request->last_name;
         $u->gender= $request->gender;
         $u->address= $request->address;
-        $u->phone_number= $request->phone_number;
+        $u->phone_number= $request->phone_number;*/
 
         $u->save();
 
