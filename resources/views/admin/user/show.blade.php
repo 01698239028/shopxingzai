@@ -118,7 +118,7 @@
                                 </thead>
                                 <tbody>
                                 @if($users)
-                                    @foreach($users as $key=>$item)
+                                    @foreach($users as $key => $item)
                                         <tr>
                                             <td>{{$key+1}}</td>
                                             <td>{{$item->id}}</td>

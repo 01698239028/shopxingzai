@@ -9,7 +9,7 @@ class Group extends Model
     //
     protected $table= 'groups';
 
-    /*public function user(){
+    public function user(){
         return $this->hasMany('App\User','group_id','id');
-    }*/
+    }
 }
