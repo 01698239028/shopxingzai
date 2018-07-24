@@ -1113,6 +1113,7 @@ pre code {
     width: 41.66666667%;
   }
   .col-md-4 {
+    padding: 10px;
     width: 33.33333333%;
   }
   .col-md-3 {

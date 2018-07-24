@@ -34,12 +34,14 @@ class ProductsController extends Controller
 
     public function category($id)
     {
+
         $products= Product::select('products.*')
             ->join('categories', 'products.category_id', '=','categories.id')
             ->where('categories.id', $id)
           ->paginate(10);
         return view('products',[
-            'products'=> $products
+            'products'=> $products,
+
         ]);
     }
 
