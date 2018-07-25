@@ -76,7 +76,7 @@ class ProductsController extends Controller
     {
         $p= Product::findOrFail($id);
 
- /*       echo '<pre>';
+      /*echo '<pre>';
         print_r($p->toArray());
         echo '</pre>';die();*/
 

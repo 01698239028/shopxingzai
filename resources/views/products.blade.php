@@ -1,7 +1,48 @@
 @extends('layouts.shop')
 @section('content')
     <div class="content">
-        <div class="products-agileinfo">
+        <div class="product-agile">
+            <div class="container">
+                <h3 class="tittle1"> Sản phẩm mới</h3>
+                <div class="slider">
+                    <div class="callbacks_container">
+                        <ul class="rslides" id="slider">
+                            <li>
+                                <div class="caption">
+                                    @foreach($products as $key => $item)
+                                        <div class="col-md-3 cap-left simpleCart_shelfItem">
+                                            <div class="grid-arr">
+                                                <div  class="grid-arrival">
+                                                    <figure>
+                                                        <a href="{{url('/product/'. $item-> id)}}">
+                                                            <div class="grid-img">
+                                                                <img  src="{{asset('uploads/product/'.$item->image)}}" class="img-responsive" alt="">
+                                                            </div>
+                                                        </a>
+                                                    </figure>
+                                                </div>
+                                                <div class="block">
+                                                    <div class="starbox small ghosting"> </div>
+                                                </div>
+                                                <div class="women">
+                                                    <h6><a href="{{url('/product/'. $item-> id)}}">{{$item->name}}</a></h6>
+                                                    <span class="size">{{$item->size}}</span>
+                                                    <p ><del></del><em class="item_price">{{number_format($item->price)}} vnđ</em></p>
+                                                    <a href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    @endforeach
+                                    <div class="clearfix"></div>
+                                    <div class="page">{{$products->links()}}</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{--<div class="products-agileinfo">
             <h2 class="tittle">Trà sữa</h2>
             <div class="container">
                 <div class="product-agileinfo-grids w3l">
@@ -44,7 +85,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                                    @if($key > 0 && (($key + 1)% 3)== 0 )
+                                                    @if($key > 3 && (($key + 1)% 4)== 0 )
                                                         <div class="clearfix"></div>
                                                     @endif
                                             @endforeach
@@ -59,6 +100,7 @@
                     <div class="clearfix"> </div>
                 </div>
             </div>
-        </div>
+        </div>--}}
+
     </div>
 @endsection

@@ -768,7 +768,7 @@ pre code {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
-  padding-left: 15px;
+  padding-left: 20px;
 }
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left;
@@ -958,7 +958,7 @@ pre code {
     width: 33.33333333%;
   }
   .col-sm-3 {
-    width: 25%;
+    width: 100%;
   }
   .col-sm-2 {
     width: 16.66666667%;
@@ -1114,7 +1114,7 @@ pre code {
   }
   .col-md-4 {
     padding: 10px;
-    width: 33.33333333%;
+    width: 25%;
   }
   .col-md-3 {
     width: 25%;

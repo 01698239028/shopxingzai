@@ -50,8 +50,7 @@
                                         </div>
                                     </ul>
                                 </li>
-                                <li><a href="codes.html">Short Codes</a></li>
-                                <li><a href="{{url('contact')}}">Mail Us</a></li>
+                                <li><a href="{{url('contact')}}">Liên Hệ</a></li>
                             </ul>
                         </div>
                     </nav>

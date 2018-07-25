@@ -11,10 +11,10 @@
                             <div class="single-left">
                                 <div class="flexslider">
                                     <ul class="slides">
-                                        @if($p->images->count() > 0)
-                                            @foreach($p->images as $item)
-                                                <li data-thumb="{{asset('uploads/product/'.$item->url)}}">
-                                                    <div class="thumb-image"> <img src="{{asset('uploads/product/'.$item->url)}}" data-imagezoom="true" class="img-responsive"> </div>
+                                        @if($p->image->count() > 0)
+                                            @foreach($p->image as $it)
+                                                <li data-thumb="{{asset('uploads/product/'.$it->name)}}">
+                                                    <div class="thumb-image"> <img src="{{asset('uploads/product/'.$it->name)}}" data-imagezoom="true" class="img-responsive"> </div>
                                                 </li>
                                             @endforeach
                                         @endif
@@ -72,7 +72,7 @@
                 </div>
                 <!--Product Description-->
                 <div class="product-w3agile">
-                    <h3 class="tittle1">Product Description</h3>
+                    <h3 class="tittle1">Chi Tiết Sản Phẩm</h3>
                     <div class="product-grids">
                         <div class="col-md-4 product-grid">
                             <img class="img-responsive " src="images/woo2.jpg" alt="">
@@ -163,7 +163,7 @@
         <!--single-->
         <div class="new-arrivals-w3agile">
             <div class="container">
-                <h3 class="tittle1">Best Sellers</h3>
+                <h3 class="tittle1">Bán chạy nhất</h3>
                 <div class="arrivals-grids">
                     <div class="col-md-3 arrival-grid simpleCart_shelfItem">
                         <div class="grid-arr">

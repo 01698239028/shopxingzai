@@ -1,31 +1,26 @@
 @extends('layouts.shop')
 @section('content')
-    <div class="banner1">
-        <div class="container">
-            <h3><a href="index.html">Home</a> / <span>Mail Us</span></h3>
-        </div>
-    </div>
     <div class="content">
         <!--contact-->
         <div class="mail-w3ls">
             <div class="container">
-                <h2 class="tittle">Mail Us</h2>
+                <h2 class="tittle">Liên hệ cho chúng tôi</h2>
                 <div class="mail-grids">
                     <div class="mail-top">
                         <div class="col-md-4 mail-grid">
                             <i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>
-                            <h5>Address</h5>
-                            <p>9th floor - Palace Building - 221B Walk of Fame - USA</p>
+                            <h5>Địa Chỉ</h5>
+                            <p>20A - Palace Building - 221 Cầu Giấy - Hà Nội</p>
                         </div>
                         <div class="col-md-4 mail-grid">
                             <i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>
-                            <h5>Phone</h5>
-                            <p>Telephone:  +1 800 603 6035</p>
+                            <h5>Điện Thoại</h5>
+                            <p>Telephone:  +84 169 823 9028</p>
                         </div>
                         <div class="col-md-4 mail-grid">
                             <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
                             <h5>E-mail</h5>
-                            <p>E-mail:<a href="mailto:example@mail.com"> example@mail.com</a></p>
+                            <p>E-mail:<a href="mailto:example@mail.com"> hoangphong12011997@mail.com</a></p>
                         </div>
                         <div class="clearfix"></div>
                     </div>

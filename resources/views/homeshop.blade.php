@@ -69,7 +69,7 @@
                                             <div class="women">
                                                 <h6><a href="{{url('/product/'. $new-> id)}}">{{$new->name}}</a></h6>
                                                 <span class="size">{{$new->size}}</span>
-                                                <p ><del>$100.00</del><em class="item_price">{{number_format($new->price)}} vnđ</em></p>
+                                                <p ><del></del><em class="item_price">{{number_format($new->price)}} vnđ</em></p>
                                                 <a href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</a>
                                             </div>
                                         </div>
