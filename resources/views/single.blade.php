@@ -11,13 +11,13 @@
                             <div class="single-left">
                                 <div class="flexslider">
                                     <ul class="slides">
-                                        @if($p->image->count() > 0)
+                                       {{-- @if($p->image->count() > 0)
                                             @foreach($p->image as $it)
                                                 <li data-thumb="{{asset('uploads/product/'.$it->name)}}">
                                                     <div class="thumb-image"> <img src="{{asset('uploads/product/'.$it->name)}}" data-imagezoom="true" class="img-responsive"> </div>
                                                 </li>
                                             @endforeach
-                                        @endif
+                                        @endif--}}
                                     </ul>
                                 </div>
                             </div>
